@@ -1,18 +1,16 @@
 # 1M
 
-## Indicator
+## Indicateurs Techniques
 
-### Indicateurs Techniques : MACD, EMA, SMA, et WMA
-
-#### 1. **MACD (Moving Average Convergence Divergence)**
+### 1. **MACD (Moving Average Convergence Divergence)**
 Le MACD mesure la relation entre deux moyennes mobiles exponentielles (EMA) pour identifier des tendances et des signaux d'achat/vente.
 
-##### Formule :
+#### Formule :
 1. **MACD Line** = EMA(12) - EMA(26)
 2. **Signal Line** = EMA(9) de la MACD Line
 3. **Histogramme** = MACD Line - Signal Line
 
-##### Interprétation :
+#### Interprétation :
 - **MACD > Signal Line** : Tendance haussière (achat).
 - **MACD < Signal Line** : Tendance baissière (vente).
 - **Histogramme croissant** : Renforcement de la tendance.
@@ -20,7 +18,7 @@ Le MACD mesure la relation entre deux moyennes mobiles exponentielles (EMA) pour
 
 ---
 
-#### 2. **EMA (Exponential Moving Average)**
+### 2. **EMA (Exponential Moving Average)**
 L'EMA est une moyenne mobile qui donne plus de poids aux données récentes, la rendant plus sensible aux variations récentes.
 
 #### Formule :
@@ -36,7 +34,7 @@ avec :
 
 ---
 
-#### 3. **SMA (Simple Moving Average)**
+### 3. **SMA (Simple Moving Average)**
 La SMA est une moyenne simple des prix sur une période donnée.
 
 #### Formule :
@@ -48,16 +46,16 @@ avec :
 - \(P_i\) : Prix à chaque intervalle.
 - \(N\) : Nombre de périodes.
 
-##### Interprétation :
+#### Interprétation :
 - Moins sensible aux variations soudaines.
 - Utilisée pour identifier des tendances générales.
 
 ---
 
-#### 4. **WMA (Weighted Moving Average)**
+### 4. **WMA (Weighted Moving Average)**
 La WMA attribue des poids décroissants aux valeurs passées pour donner plus d'importance aux prix récents.
 
-##### Formule :
+#### Formule :
 \[
 WMA = \frac{P_1 * W_1 + P_2 * W_2 + \dots + P_N * W_N}{W_1 + W_2 + \dots + W_N}
 \]
@@ -65,13 +63,13 @@ WMA = \frac{P_1 * W_1 + P_2 * W_2 + \dots + P_N * W_N}{W_1 + W_2 + \dots + W_N}
 avec :
 - \(W_i = i\) (pondération linéaire croissante).
 
-##### Interprétation :
+#### Interprétation :
 - Utile pour suivre les tendances avec une réactivité modérée.
 - Plus réactive que la SMA mais plus stable que l'EMA.
 
 ---
 
-#### Exemple en Python :
+### Exemple en Python :
 ```python
 import numpy as np
 import pandas as pd
