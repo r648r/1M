@@ -22,9 +22,7 @@ Le MACD mesure la relation entre deux moyennes mobiles exponentielles (EMA) pour
 L'EMA est une moyenne mobile qui donne plus de poids aux données récentes, la rendant plus sensible aux variations récentes.
 
 #### Formule :
-$\[
-EMA_{today} = Price_{today} * \alpha + EMA_{yesterday} * (1 - \alpha)
-\]$
+$EMA_{today} = Price_{today} * \alpha + EMA_{yesterday} * (1 - \alpha)$
 avec :
 - $\(\alpha = \frac{2}{N+1}\) (N = période = durée d'un bougie)$
 
@@ -38,13 +36,11 @@ avec :
 La SMA est une moyenne simple des prix sur une période donnée.
 
 #### Formule :
-\[
-SMA = \frac{P_1 + P_2 + \dots + P_N}{N}
-\]
+$SMA = \frac{P_1 + P_2 + \dots + P_N}{N}$
 
 avec :
-- \(P_i\) : Prix à chaque intervalle.
-- \(N\) : Nombre de périodes.
+- $\(P_i\)$ : Prix à chaque intervalle.
+- $\(N\)$ : Nombre de périodes.
 
 #### Interprétation :
 - Moins sensible aux variations soudaines.
@@ -56,12 +52,10 @@ avec :
 La WMA attribue des poids décroissants aux valeurs passées pour donner plus d'importance aux prix récents.
 
 #### Formule :
-\[
-WMA = \frac{P_1 * W_1 + P_2 * W_2 + \dots + P_N * W_N}{W_1 + W_2 + \dots + W_N}
-\]
+$WMA = \frac{P_1 * W_1 + P_2 * W_2 + \dots + P_N * W_N}{W_1 + W_2 + \dots + W_N}$
 
 avec :
-- \(W_i = i\) (pondération linéaire croissante).
+- $\(W_i = i\)$ (pondération linéaire croissante).
 
 #### Interprétation :
 - Utile pour suivre les tendances avec une réactivité modérée.
