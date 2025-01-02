@@ -26,7 +26,7 @@ L'EMA est une moyenne mobile qui donne plus de poids aux données récentes, la 
 EMA_{today} = Price_{today} * \alpha + EMA_{yesterday} * (1 - \alpha)
 \]
 avec :
-- \(\alpha = \frac{2}{N+1}\) (N = période)
+- $\(\alpha = \frac{2}{N+1}\) (N = période)$
 
 #### Interprétation :
 - Réagit rapidement aux changements de prix.
