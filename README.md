@@ -22,11 +22,11 @@ Le MACD mesure la relation entre deux moyennes mobiles exponentielles (EMA) pour
 L'EMA est une moyenne mobile qui donne plus de poids aux données récentes, la rendant plus sensible aux variations récentes.
 
 #### Formule :
-\[
+$\[
 EMA_{today} = Price_{today} * \alpha + EMA_{yesterday} * (1 - \alpha)
-\]
+\]$
 avec :
-- $\(\alpha = \frac{2}{N+1}\) (N = période)$
+- $\(\alpha = \frac{2}{N+1}\) (N = période = durée d'un bougie)$
 
 #### Interprétation :
 - Réagit rapidement aux changements de prix.
