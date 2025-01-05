@@ -2,7 +2,16 @@
 
 
 ## Idée / ToDo
-- Faire un code en PinScript sur TV ou python avec td dans l'objectif de backtrader une devise en brutforcant les different paramètre (T, 12/26 (MACD), RSI) des indicateurs dans le but de trouver les réglage les plus opti
+
+- Faire du backtrading en python avec `import td` -> entré : source de finance -> JSON / Grepable
+    - Brutforce les parametres des indicateurs (Gaussian Filter, Gaussian Channel, BB, RSI, Stock RSI, Shannon, MACD, TRIX) dans le but de trouver les var les plus optimisés
+    - Intégré les indicateurs les plus bangers dans une stratégie PineScript sur TV
+        - Intégré sur BTC ETH
+        - Faire un tableau avec ces collones :
+    - DCA
+        - Comparatif DCA avec `T` le plus rentable en prenant en compte
+        - Comparatif DCA vs DCA pendant [BCB](https://www.tradingview.com/script/TLJlX4S6-Bitcoin-Cycle-BigBeluga/)
+- Faire des https://www.tradingview.com/script/TLJlX4S6-Bitcoin-Cycle-BigBeluga/
 - Faire une selections des paramètre les plus intéréssant
 - Faire des fonctions qui représente chaqune une stratégie d'investissement
 - Découper la courbe globale en différent cycle tester les différentes stratégie
