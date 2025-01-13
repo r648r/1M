@@ -1,6 +1,38 @@
 # 1M
 
 
+```
+project/
+├── main.go -> Log + flag   
+├── indicators/
+│   ├── moving_average.go
+│   ├── rsi.go
+│   ├── macd.go
+│   ├── gaussian_channel.go
+│   ├── bb.go
+│   ├── trix.go
+│   └── shannon.go
+├── strategies/
+│   ├── sma_cross.go
+│   ├── rsi_strategy.go
+│   └── ....
+├── data/
+│   ├── data_fetcher.go
+│   └── data_loader.go
+├── visualization/
+│   └── plot.go
+├── utils/
+│   └── helper_functions.go
+│        - Utility functions for data manipulation, error handling, and logging.
+│        - General mathematical operations or statistical functions.
+│        - Helper functions for concurrency management, such as using goroutines and channels.
+│        - Functions for generating sample data or debugging purposes.
+└── parameters.go
+       - Structs or functions to define and manage parameter sets.
+       - Functions to generate combinations of parameters for optimization.
+       - Logic to validate parameter values against constraints specific to each indicator or strategy.
+       - Functions to save and retrieve optimal parameter sets.
+```
 ## Idée / ToDo
 
 - Faire du backtrading en python avec `import td` -> entré : source de finance -> JSON / Grepable
@@ -149,16 +181,11 @@ avec :
 - $W_i = i$ (pondération linéaire croissante).
 
 
-
-#### Interprétation :
+#### Interprétation
 - Utile pour suivre les tendances avec une réactivité modérée.
 - Plus réactive que la SMA mais plus stable que l'EMA.
 
 ---
-
-
-
-
 
 ## Article 
 - [385% indicator](https://freedium.cfd/https://medium.com/limitless-investor/358-return-per-trade-i-created-an-indicator-that-will-change-your-trading-forever-69824d8d0de3)
